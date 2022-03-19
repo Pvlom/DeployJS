@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/index.css">
+
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>clase3</title>
+</head>
+<body>
+    <script>
+/*
+
+//if con else if
+//ejemplo paseje de avion
+
+let comprar = true;
+let asientos = false;
+
+// else if. sigue comparando
+// realiza otra evaluacion, pero con los mismo datos(caracteristicas)
+
+if (comprar) {
+    console.log("Bienvenido a la empresa de pasajes");
+    document.write("Bienvenido a la empresa de pasajes");
+    
+}else if (comprar && asientos) {
+    console.log("Lo sentimos este vuelo viaja completo y no tenemos asientos");
+}else{
+    console.log("Esta invitadoa a viajar cuando quiera");
+
+}
+
+//documen.write (escribir)
+
+*/
+/*
+console.log("Bienvenidos a la clase 03");
+
+//Anidamiento
+// ventana prompt
+
+let edad = prompt("introduzca su edad:");
+let nombre = prompt("Ingrese su nombre:");
+
+if (edad >=20) {
+    alert("Bienvienido a la aplicacion" + nombre);
+}if (nombre = "Pedro") {
+    alert("Bienvenido a la aplicacion");
+    
+}
+*/
+/*
+//Usar el SWITCH. evaluar una sola cosa y darle multiples condiciones
+// Me sinplifica mi codigo suplantando los IF, if anidados.
+let pais = prompt("Ingresa la prime letra de tu pais");
+console.log(pais);
+
+pais.toLowerCase();
+console.log(pais);
+
+let minuscula = pais.toLowerCase(pais);
+console.log(minuscula);
+// el a es un string. de lo contrario lo toma como numero.
+// si ppones una letra imprime todo. Lo que quiero es que muetsre solo el pais que estoy escribiendo
+//Que hace el breake. cuando encuentra la respuesta que esta buscando salta.
+//Default. si no encuentra, me tira otra respuesta para que no quede vacio.
+//Si ponemos una B mayuscula. no tiene registros y pone el mesnaje del DEFAUL.
+//Usar . (agrega un metodo) lowerCase. agrega todo en minusculas.
+//creamos otra variale
+
+switch (pais.toLowerCase()) {
+    case "a":
+        console.log("Tu pais es Argentina");
+        break;
+    case "u":
+        console.log("Tu pais es Uruguay");
+        break;
+    case "c":
+        console.log("Tu pais es Chile");
+        break;
+    case "b":
+        console.log("Tu pais es Brasil");
+        break;
+    default:
+    console.log("No tenemos ninguna respuesta");
+         break;   
+}
+*/
+//Objeto Fecha. 
+// que son los objetos. instancias de alguna clase. categoria
+// software para control de empleados (dni, empleado, nombre, etc.)
+// 1,000 datos que necesito guardar. 
+//dia va a hacer un objet fecha.
+//Date en mayuscula la primera letra.
+//Objeto fecha completo. Sat Mar 05 2022 09:33:08 GMT-0600 (Central Standard Time)
+let dia = new Date();
+console.log(dia);
+
+//solo el año
+//cuando pongo . aparecen todos los metodos
+//despues del metodo abrir y cerrar parentesis
+  console.log(dia.getFullYear());
+//El mes / dia
+
+//Le sume uno al valor para que coincida. Enero = 0, febrero = 1.
+console.log(dia.getMonth()+1);
+console.log(dia.getDay());
+console.log(dia.getHours());
+
+//siempre hay que sumarle un 1 para obtner el dia. por que es un arreglo. inicia en CERO indice = [0]
+
+//Herramienta (BOOTSTRAP) cosas especificas de JS.
+//Framework o Libreria. que podemos usar desntro de nuestros proyectos
+//Estilos CSS y JS
+
+
+<!-- JavaScript Bundle with Popper -->
+
+</script>
+
+<a href="../Index.html">ir a la pagina principal</a>
+<a href="./Operadores.html">Ir a la pagina de operadores de JS</a>
+<a href="./clase4_modulo3.html">Ir a la pagina de clase 04</a>
+
+<h1 style="text-align:center; margin-top: 50px; color:green">
+    Bienvenido a la clase03 
+</h1>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script src="../pages/Clase3_modulo2.html"></script>
+</body>
+</html>

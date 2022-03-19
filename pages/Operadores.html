@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <title>Operadores en JS</title>
+</head>
+<body>
+    <a href="../Index.html">Ir a la pagina principal</a>
+    <a href="../pages/Clase3_modulo2.html">Ir a la pagina de clase 03</a>
+    <a href="../pages/clase4_modulo3.html">Ir a la pagina de clase 04</a>
+
+
+    <script>
+
+//Asignacion (=) asignamos informacion a una variable
+let numero = 25;
+console.log("El numero inical es: "+ numero);
+
+//Incremento + sumarle uno a la variable numerica
+//Mucho codigo
+let otroNumero = numero + 1;
+console.log(otroNumero);
+    //otra forma de hacerlo
+numero = numero + 1;
+25 = 25 +1;
+console.log(numero);
+//utilizo el operador (++)
+numero++;
+console.log(numero);
+
+//Decremento (--)
+numero--;
+console.log(numero);
+
+//Cantidad de veces que entra un usuaro a una aplicacion (material)
+
+//Operadores Matematicos
+let uno = 100;
+let dos =80;
+console.log(uno);
+console.log(dos);
+
+//operador suma
+let resultado = uno + dos;
+console.log("El resultado de la suma es: "+ resultado);
+//Resta
+resultado = uno - dos;
+console.log("El resultado de la resta es: "+ resultado);
+
+//mult
+resultado = unos * dos;
+console.log("El resultado de la mult es: "+ resultado);
+
+// div
+resultado = uno / dos;
+console.log("El resultado de la Div es: "+ resultado);
+
+//Modulo Ver. JamBoard para tener una pizarra. 
+//100 dividido 12 = 8.33
+// El resto que queda 100 menos 96 = 4. ***Depende del resultado para ssaber si es PAR / IMPAR, para eso se usa.
+resultado = uno % dos;
+console.log("El resultado de la Mod es: "+ resultado);
+
+resultado =(200 + 250) * uno/dos;
+console.log("El resultado de la operacion es:" + resultado);
+
+//** Potenciacion
+100 a la 2, 100 * 100
+// en JS
+resultado = uno ** 1;
+console.log("El resultado de la potencia es:" + resultado);
+
+//Operador de Negacion
+//Poner un signo de asignacion. (!)
+//Negar UNO
+// traduccion no uno
+//let Negacion = !uno;
+!uno;
+console.log(uno);
+
+let falso = false;
+console.log("Antes de la negacion: "+ falso);
+
+//Operador Logicos
+//&&, es el Y
+let codigo = 12345;
+let usuario = "Berni";
+// condicional IF, elegir 
+//if(condicion == true){
+//true
+//}
+// si ponog un solo =, lo considera como una variable
+
+// && logico
+if(codigo == 12345 && usuario == "Berni"){
+    alert("Bienvenido a la aplicacion");
+}else{
+console.log("contraseña o usurios incorrectos");
+}
+
+// o logico (||), es mas flexible. evaluar una de las dos condiciones es veraddera
+if(codigo == 12345 || usuario == "Berni"){
+    alert("Bienvenido a la red social de tu preferencia");
+}else{
+console.log("contraseña o usurios incorrectos");
+}
+
+// && ambas deben ser true.
+let edad = 18;
+let dinero = true;
+
+if(edad == 18 && dinero == true){
+    alert("Podes comprar bebidas");
+}else{
+console.log("Lo sineto sera para otra opoertunidad");
+}
+
+// o logico, evalua que una de las dos variables sea true
+
+if(edad == 18 || dinero == true){
+    alert("Podes comprar bebidas");
+}else{
+console.log("Lo sineto sera para otra opoertunidad");
+}
+
+
+//Operadores relacioneales, (>,<,>=,<=,==(igual para comparacion),!>(distinto a))
+
+edad = 20;
+if(edad == 18 ){
+    alert("Podes comprar bebidas");
+}else{
+console.log("Lo sineto, sera para otra opoertunidad");
+}
+
+//Incluye 18 hasta  . . .n
+
+edad =18;
+if(edad >= 18 ){
+    alert("Podes comprar bebidas");
+}else{
+console.log("Lo sineto, sera para otra opoertunidad");
+}
+
+
+edad =15;
+if(edad < 18 ){
+    alert("Lo siento, no podes ingresar a la fiesta");
+
+
+edad =15;
+if(edad < 18 ){
+    alert("Lo siento, no podes ingresar a la fiesta");
+
+
+// Diferente
+
+//Cuando la variable es lleno.
+//Se puede usar un contador para llegar a determinar (lleno-libre)
+let lugares = "lleno";
+
+if (lugares != "Libre") {
+    alert("Lo sinto ya no hay lugares en el cine");
+}
+
+//cuando la variable es libre.
+let lugares = "libre";
+
+if (lugares != "libre") {
+    alert("Lo sinto ya no hay lugares en el cine");
+    }else{
+
+        alert("Compre todas las entradas que necesite");
+    }
+
+//Lenguaje de maquina (0 y 1) binario. Lenguaje de programacin de bajo nivel.
+//sistema informatico. 
+
+// operadores (==,Igual ===, Identicos)
+
+if (edad === 18 || dinero == true) {
+    
+}
+
+//if con else if
+//ejemplo paseje de avion
+
+let comprar = true;
+let asientos = false;
+
+// else if. sigue comparando
+// realiza otra evaluacion, pero con los mismo datos(caracteristicas)
+
+if (comprar) {
+    console.log("Bienvenido a la empresa de pasajes");
+    document.write("Bienvenido a la empresa de pasajes");
+    
+}else if (comprar && asientos) {
+    console.log("Lo sentimos este vuelo viaja completo y no tenemos asientos");
+}else{
+    console.log("Esta invitadoa a viajar cuando quiera");
+
+}
+
+//documen.write (escribir)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    <h1>
+        <h1 style="text-align:center; margin-top: 50px; color:rgb(38, 0, 128) ;"></h1>
+        operadores en JS
+
+
+    </h1>
+
+
+<script src="../javascript/operadores.js"></script>
+</body>
+</html>

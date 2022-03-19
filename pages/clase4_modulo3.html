@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<title>Modulo3</title>
+
+
+    
+</head>
+<script>
+
+//DOM. manejo de documentos de los objetos. 
+/*
+let titulo = document.getelementById('titulo');
+console.log('EL elemnto capturado es: '+ titulo);
+
+titulo.innerText ='Bienvienido a la clase 04';
+
+let nombre =document.getelementById('nombre');
+if (nombre == 'admin') {
+    console.log('contraseña incorrecta');
+    404
+    
+}
+*/
+/*
+//trabaja con datos ById
+document.getElementById('carouselExampleControl');
+//devuelve el primer elemento con el uno.
+let uno = document.querySelector('.uno');
+console.log(uno);
+
+//Etiquetas
+docuemnt.getElementByIdTagName(h1).length();
+
+titulo.
+
+/*
+
+*/
+
+//Array de Objetos
+//variables especificas donde podemos guardar datos
+//Empleados de una empresa. Datos importantes que estamos cargando
+
+let empleados = [
+    {
+nombre: 'Juan',
+cargo: 'Administrador',
+telefono: '123456789'
+
+    },
+
+    {
+nombre: 'Pepe',
+cargo: 'Auxiliar',
+telefono:'123456789'
+    },
+
+    {
+nombre:'Laura',
+cargo:'Contador',
+telefono:'123456789'
+    },
+
+    {
+nombre:'Pablo',
+cargo:'Abogado',
+telefono:'123456789'
+    }
+];
+
+//Metodo que ordena los arreglos
+empleados.sort();
+console.log('accedemos a todo el Array'); //Acceso al Array de empleados
+console.log(empleados);
+
+console.log('Accedemos a un elemnto del Array');
+console.log(empleados[1]);  //Acceso a uno de los elementos del arreglo de empleados
+
+console.log('Accedemos a una de las variables');
+console.log(empleados[1].cargo);    //como acccedemosa una de las variables
+
+let ultimo = empleados[empleados.length - 1];
+alert(ultimo)
+//Sin usar la concatenacion
+//Usando los tamplate stirng
+console.log(`EL ultimo empleado es: ${ultimo.nombre}, su cargo es ${ultimo.cargo} y su contacto es ${ultimo.telefono}`);
+//Usando los concatenacion
+console.log('EL ultimo empleado es:'+ ultimo.nombre + ',' + 'su cargo es:' + ultimo.cargo + ',' + 'y su contacto es:' + ultimo.telefono);
+
+</script>
+
+<body>
+
+<a href="../Index.html">ir a la pagina principal</a>
+<a href="./Operadores.html">Ir a la pagina de operadores de JS</a>
+<a href="./Clase3_modulo2.html">Ir a la pagina de clase 03</a>
+
+
+<h1 style="text-align:center; margin-top: 50px; color:green">
+    Bienvenido a la clase04 
+</h1>
+
+<script src="../javascript/clase04.js"></script>
+
+
+
+    <h3 id="otroTitulo"></h3>
+</body>
+</html>

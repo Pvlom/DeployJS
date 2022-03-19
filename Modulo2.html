@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>"Binvenidos a nuestra aplicacion"</h1>
+  <script>
+  /*
+   var mostrarMensaje = true;
+   var sueldo = 500;
+   var nombre = "Juan";
+
+  /*
+   if (nombre == "Juan") {
+       alert("Bienvenido Juan");
+   }
+   
+
+   if (sueldo == 500) {
+      alert("Ganas Arriba del minimo");
+   }
+  
+
+   if (mostrarMensaje == true) {
+      alert ("Hola Mundo")
+     
+   }
+   */
+   //Estructura IF multicondicional
+   // Operdor (y = &&)
+   // usando el &&, las dos condicines se deben cumplir para que muestre el mensaje
+
+  /*
+   if (nombre == "Juan" && sueldo > 400 && mostrarMensaje == true) {
+     alert("Bienvenido Juan");
+
+     
+   }
+   */
+   /*
+   //Uso del operador (or) ||
+   //Tiene como objetivo, que se cumpla una de las condiciones, para que muestre el mensjae.
+   // Se puede conbinar los operadores (&& y ||)
+   //Ejemplo. como primera condicion que se cumpla el nombre
+
+   if (nombre == "Juan" && sueldo < 400 || mostrarMensaje == true) {
+     alert("Bienvenido Juan");
+
+    }
+*/
+/*
+var nombre  = "Juan";
+var apellido = "Diaz";
+var sueldo = 0;
+var edad = 32;
+var esCasado = true;
+var categoria = "7G";
+
+//variante if else. EL (else), tiene como objetivo una segunda condicion (negativa)
+//dos opciones
+/*
+if (edad > 35) {
+  alert("Esta cerca de los 40");
+  
+} else{
+  alert("Aun es joven")
+*/
+
+//otra opcion
+/*
+if (nombre == "" && sueldo < 1000) {
+  alert("Usted es un anonimo");
+  
+} else{
+  alert("Usted es: " + nombre)
+
+
+}
+
+*/
+//La estructira (ifelse). se puede encadenar para realizar varias comprobaciones seguidas
+
+/*
+if (nombre == "" ) {
+  alert("Usted es un anonimo");
+  
+} else if (sueldo < 10000) {
+  alert("Su sueldo es bajo");
+} 
+  else if (esCasado == true) {
+    alert("Usted es soltero");
+  
+
+}
+*/
+/*
+if (categoria == "4C") {
+  sueldo = 10000;
+  
+} else if(categoria == "5F"){
+  sueldo =12000;
+} else if(categoria == "6H"){
+    sueldo = 15000;
+
+  }
+
+//Usar la pala reservada (switch)
+// nos ahorramos usar el IF. 
+switch (categoria) {
+  case "4C":
+    //programar en su interior la accion positiva para el caso concreto
+    // default, se usa como el (else) negativo.
+    sueldo = 10000;    
+    break;
+  case "5F":
+    sueldo = 12000;
+  case "6H":
+    sueldo = 15000;
+  case "7G":
+    sueldo = 18000;
+  break;
+  default:
+    sueldo = 6000
+}
+
+//Ventajas y desventajas. 
+//Switch.
+//if. puede hacer comparaciones de valores mucho mas extensos. usa operadores Logicos (<,>,=)
+// Puede ser para una o varias variables con posibildad de muchos valores inderterminados.
+// El switch solo estara limitado a comparar por un valor exacto propuesto por la variable.
+//se recomienda una variable con posibilidad de muchos valores determinados
+//ambos compara condiciones.
+
+if (edad > 35) {
+  alert("Esta cerca de los 40");
+}  else if(edad == 35){
+  alert("Esta en plena juventud");
+} else {
+  alert("Es un joven en progreso");
+}
+
+*/
+//Estructura WHILE
+//repetitiva
+//Traduccion: mientras
+//condicion positva (verdadera), tendremos una accion repettitva por "n" veces.
+//Mientras se cumpla la condicion, repetir indefinidamente las instrucciones.
+//Bucle, estructura ciclica (positiva)
+/*
+
+var resultado = 0;
+var tope = 100;
+var n = 200;
+//n++. significa, que le suma uno a "n"
+
+while (n <= 100) {
+  resultado += n;  
+  console.log("Resultado vale: " + resultado);
+  n++;
+}
+
+//El bucle (do while) es muy parecifo a while. salvo que 
+do {
+  console.log("resultado vale: " + resultado);
+  n++;
+} while (n<= tope);
+//Para seguir con la ejeccion ciclica > true
+ 
+//Diferencia while. puede ejecutrse o no
+//diferencia do while. si o si se ejecutara como minimo una vez
+
+
+var edad = 18;
+var veces =1;
+
+while (edad>18) {
+  console.log("Ir de fiesta" + veces + "veces");
+  veces++;  
+}
+do{
+  console.log("Ir a bailar una" + veces + "veces");
+  veces++;
+} while(edad >18);
+
+*/
+
+//Confirmacion
+//rta. es la abreviatura respuesta
+//confirm. es parecido (alert), pero visualizando los botones
+//aceptar = true cancelar = false
+
+//var rta = confirm("¿Esta seguro que desea seguir?")
+
+//Otra forma
+//Usando el (confirm)
+/*
+if (confirm("¿Esta seguro que desea salir?")) {
+  window.location = "http://google.com";
+}else{
+  alert("Ok, Gracias por quedarse");
+
+  }
+
+*/
+/*
+//Ingreso de datos
+//Usando (prompt) para que ingrese datos el usuario
+var nombre = prompt("Ingrese su Nombre: ");
+var apellido = prompt("Ingrese su Apellido");
+var edad = prompt("Ingrese su Edad");
+var sueldo = Number.parseInt(prompt("Ingrese su sueldo"));
+var sueldoNeto = sueldo -(sueldo * 0.05);
+//Una forma de comprobar que los datos se han almacenado es:
+document.writeln("Hola soy " + apellido + ", "+ nombre+ "y tengo"+edad + "Años. Gano $" + sueldoNeto + " al mes");
+//Asumir que el usuario es del tipo string
+//sueldo del tipo string
+//Number.parseInt. transformado a un valor numerico
+*/
+/*
+//Aplicacion Interactiva
+var nombre;
+var edad;
+var categoria;
+
+do{
+nombre = prompt("Ingrese su Nombre");
+edad = prompt("Ingrese Edad");
+categoria = prompt("Asigne categoria: A2 - B4 - C6 - F8");
+} while (confirm("¿Desea guardar los datos?"));
+
+
+document.write("usted es:" + nombre+ ", su edad es de " + edad + "Y sus categoria es"+ categoria);
+
+//al momento de termine de ingresar los datos slicite si deseo guarar los cambios
+//Estructura cicilica (do while)
+*/
+
+/*
+
+
+var edad = Number(prompt("Ingrese su edad"));
+var usuario = Number(prompt("Nombre del Usuario: "));
+var clave = Number(prompt("Contraseña: "));
+
+
+if (edad >= 18) { 
+  alert("Bienvenido/a"); v
+} else {
+
+alert("Error");
+}
+
+if (usuario == "admin" && clave == "1234") {
+  alert("Bienvenido/a");
+} else{ 
+alert("Error");
+}
+
+
+/*
+if (rol == "admin" && rol ==  "recursos") {
+}
+ 
+alert("Bienvenido")vq10-o
+
+
+clave = prompt("¿Cual es su clave?");
+if (clave == 1234) {
+  
+}
+alert("Excelente");
+
+
+//("Ha habido un error, pregunte a su supervisor rol y contraseñas correctas");
+
+
+nombre = prompt("¿Cual es su nombre de usuario?");
+
+//Diferencia al usar un alert, document.write, inner.html
+alert("Hola " + nombre + ", " +"Bienvenido a nuestra aplicacion");
+//document.write("Hola " + nombre + ", " +"Bienvenido a nuestra aplicacion");
+//alert(innerHTML);
+*/
+
+var usuario = prompt("¿Ingrese su rol?");
+
+if (usuario == "admin"){
+  alert("Bienvenido");
+  }else{
+alert("Ha habido un error, pregunte a su supervisor rol");
+}
+
+ var clave = Number(prompt("¿Cual es su clave?"));
+ if (clave == "1234") {
+   alert("Hola");   
+ }else{
+  alert("Ha habido un error, pregunte a su supervisor rol y contraseñas correctas");
+
+ }
+
+var nombre = prompt("¿Cual es su nombre de usuario?");
+alert("Hola " + nombre + "," + " "+ "Bienvenido a nuestra aplicacion");
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

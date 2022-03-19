@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+/*
+Manejar multiples valores
+1.Una aplicacion necesita manejar los dias de la semana
+2.Recurrimos a los ARRAYS (Coleccion agrupada de valores)
+3.se crea una unica variable, donde se almcaenaran os datos
+4.A cada valor se le asigna un indice de ubicacion
+5.La posicion de los elementos empiezan a contar desde cero
+
+Array: dias
+Lunes   Martes  Miercoles   Jueves  Viernes Sabado  Domingo
+0       1       2           3       4       5       6
+
+*/
+
+//Creacion de una Array
+
+ //               0       1       2           3           4       5       6   
+var dias = ['Lunes','Martes','Miercoles','Jueves','Viernes','Sabado','Domingo'];
+var meses = [];
+meses [0] = 'Enero';
+meses [1] = 'Febrero';
+meses [2] = 'Marzo';
+
+console.log(dias);
+console.log(meses);
+
+//Array Dinamicos
+//Estatico. Solo tendra los datos registrados en la creacion
+//Dinamico. los valorres surgiran a posterior
+
+dias[7] = 'Osvaldo';
+meses [3] = 'Abril';
+
+console.log(dias);
+console.log(meses);
+
+//Acceso a los datos de un Array
+
+var meses =['Enero','Febrero','Marzo','Abril'];
+console.log('El mes 2 es:' + meses[1]); meses[1];
+
+meses[2] = 'Marzo mes de inicio';
+console.log(meses);
+//Longitud de elementos
+console.log('La cantidad de items es:' + meses.length); // 4 items
+meses[meses.length] = 'Mayo';
+console.log(meses);
+
+//Bucles
+var meses = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+for (let i = 0; i < meses.length; i++) {
+    console.log('El mes ' + (i + 1) + ' es: ' + meses[i]);
+  
+};
+
+//Matriz. Es un tipo de estructura de datos que almacenas los valores 
+//Tambine se les denomina Arrays Multidimensionales.
+
+/*
+0   Juan        Gomez       30303030
+1   Laura       Sanchez     31313131
+2   Gabriel     Lopez       32323232
+        0          1            2
+
+
+*/
+
+var nombre ='Jose';
+var apellido = 'Sanchez';
+var edad = 45;
+
+var nombre2 = 'Juana';
+var apellido2 = 'Lopez';
+var edad2 = 23;
+
+//Aqui se crea un ARRAY
+//En una misma variable repeti los datos de una persona
+var persona1 = ['Jose','Sanchez',45];       //Forma mas organizada
+var persona2 = ['Juana','Lopez',23];
+
+console.log(personas);
+
+//Matriz
+                 
+var personas =  [          
+                ['Jose','Sanchez',45], 
+                ['Juana','Lopez',23],
+                ['Luis','Gomez',38],
+                ['Laura','Rodriguez',29],
+                ['Marcos','Hernandez',19],
+                ['Monica','Fernandez',54],
+                ['Pablo','Martinez',32],
+                ['Patricia','Gonzalez',24]                
+            ];
+//Acceder a una MATRIZ
+//Modo directo
+//Quiero ver los datos de Laura Rodriguez
+console.log( 'Hola soy ' + personas[5][0] + ' ' + personas[5][1] + ' y tengo '+ personas[5][2] + ' Años ');
+
+//Acceder para modificar
+personas[4][0] = 'Julio';
+personas[4][1] = 'Gormeso';
+personas[4][2] = 14;
+
+console.log( 'Hola soy ' + personas[4][0] + ' ' + personas[4][1] + ' y tengo '+ personas[4][2] + ' Años ');
+
+//otra forma de modificar
+
+personas[3]= ['Claudia','Suarez',30];
+console.log( 'Hola soy ' + personas[3][0] + ' ' + personas[3][1] + ' y tengo '+ personas[3][2] + ' Años ');
+
+//Acceso a los datos. combinarla con la estructura FOR
+//la posicion i. cumplira el objetivo de indicarme el item entero individual que quiero mostrar.
+
+for (let i = 0; i < personas.length; i++) {
+    console.log('Hola soy ' + personas[i] [0] + ' ' + personas[i][1] + ' y tengo ' + personas[i][2] + ' Años ')};
+
+//Alternativa a la creacion de matrices
+//Sistema de claves: nombre, apellido, edad. Valor: asociado.
+var personas2 = [
+    { 'nombre': 'Jose','Apellido': 'Sanchez', 'edad': 45 },
+    { 'nombre': 'Juana','Apellido': 'Lopez', 'edad': 23 },
+    { 'nombre': 'Luis','Apellido': 'Gomez', 'edad': 38 }
+];
+
+for (let i = 0; i < personas2.length; i++) {
+    console.log('Hola, yo soy ' + personas2[i]['nombre'] + ' '+ personas2[i]['Apellido']+ ' y tengo '+ personas2[i]['edad']+ ' Años.');    
+}
+
+//Bucle while for
+
+
+
+
+</script>
+
+
+</body>
+</html>
